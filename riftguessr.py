@@ -4,6 +4,9 @@ import random
 from PIL import Image
 
 
+Image.MAX_IMAGE_PIXELS = 12200*10240
+
+
 def zoom(image: Image, x: int, y: int) -> None:
     base_width, base_height = image.size
     
